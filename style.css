@@ -1,1 +1,372 @@
+:root {
+    --pastel-blue: #dcf2f9;
+    --pastel-pink: #fce4ec;
+    --pastel-purple: #f3e5f5;
+    --deep-purple: #8b6ac4;
+    --white: #ffffff;
+    --pearl-white: #fcfcfc;
+    --red: #f24f4f;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0;
+    background-color: var(--white);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* All Pages */
+main {
+    padding: 2rem;
+}
+
+.header {
+    background-color: var(--pastel-blue);
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+img {
+    height: 75px;
+    width: 75px;
+    background: var(--white);
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--pastel-pink);
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 26px;
+    color: #5b8fb9;
+    letter-spacing: 1px;
+}
+
+nav {
+    background-color: var(--pastel-blue);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--deep-purple);
+}
+
+.footer {
+    background-color: var(--pastel-blue);
+    padding: 20px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.header, .footer {
+    color: #5b8fb9;
+}
+
+
+/* Page 1*/
+.intro {
+    background-color: var(--pastel-purple);
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1000px;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 15px;
+    color: var(--deep-purple);
+    font-weight: 500;
+}
+
+.intro h3 {
+    font-size: 24px;
+}
+
+.about {
+    text-align: center;
+    margin-top: 50px;
+    text-wrap: balance;
+}
+
+.patient-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.patient-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    flex-wrap: wrap; 
+    width: 100%;
+    max-width: 1200px;
+}
+
+.patient-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+}
+
+.circle-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #eee;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circle-img:hover {
+    transform: scale(1.1);
+    border-color: #92caee; 
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.profile-box {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.pet-info {
+    font-size: 0.95rem;
+    margin: 4px 0;
+    color: #444;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+
+/* Page 2*/
+.emergency-banner {
+    background-color: var(--red);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.emergency-banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.emergency-banner p {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.phone-number {
+    background: var(--white);
+    color: var(--red);
+    font-size: 3rem;
+    font-weight: 700;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.schedule-wrapper {
+    background-color: var(--pastel-purple);
+    color: var(--deep-purple);
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.schedule {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-section {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.info-section h3 {
+    font-size: 1.8rem;
+    color: #2D3748;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #D6BBFB;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.emergency-grid {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    gap: 20px;
+}
+
+.info-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-section li {
+    padding: 10px 0;
+    padding-left: 25px;
+    position: relative;
+    font-size: 1.05rem;
+    color: #4A5568;
+}
+
+.info-section li::before {
+    content: "•";
+    color: var(--deep-purple);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+
+/* Page 3*/
+.patient-registration {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 40px;
+    padding-top: 20px;
+    background-color: var(--white);
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.03);
+}
+
+.PetHeadingBanner {
+    text-align: center;
+    color: #555;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    border: 2px solid var(--pastel-purple);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--deep-purple);
+    padding: 0 15px;
+    font-size: 1.1rem;
+}
+
+.input-group {
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+input, select {
+    padding: 12px;
+    border: 2px solid var(--pastel-blue);
+    background-color: var(--white);
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--pastel-pink);
+    background-color: var(--pearl-white);
+}
+
+.map-section {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.map-container {
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 4px solid var(--pastel-blue);
+    display: flex;
+}
+
+.map-container iframe {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+}
+
+.disclaimer {
+    color: #aaa;
+    font-size: 0.85rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 18px;
+    background-color: var(--deep-purple);
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(149, 117, 205, 0.3);
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #7e57c2;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(149, 117, 205, 0.4);
+}
