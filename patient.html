@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Registration | Paws & Claws</title>
+</head>
 
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="./cliniclogo.png">
+            </div>
+            <h1 class="brand-name">Paws & Claws</h1>
+        </div>
+        <nav>
+            <a href="lobby.html">Lobby</a>
+            <a href="emergency.html">Emergency</a>
+            <a href="patient.html">Register</a>
+        </nav>
+    </header>
+
+    <main class="patient-registration">
+        <h2 class="PetHeadingBanner">Register Your Pet</h2>
+        <form action="/submit-pet-data" method="POST">
+            <div class="registrationForm">
+                <fieldset class="petDetails">
+                    <legend>Pet Details</legend>
+                    <div class="input-group">
+                        <label for="petName">Pet Name</label>
+                        <input type="text" id="petName" name="petName" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="species">Species</label>
+                        <select id="species" name="species">
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="exotic">Exotic</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="breed">Breed/Variety</label>
+                        <input type="text" id="breed" name="breed">
+                    </div>
+                </fieldset>
+
+                <fieldset class="ownerContact">
+                    <legend>Owner Contact</legend>
+                    <div class="input-group">
+                        <label for="ownerName">Owner Name</label>
+                        <input type="text" id="ownerName" name="ownerName" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="ownerEmail">Owner Email</label>
+                        <input type="email" id="ownerEmail" name="ownerEmail" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="ownerContactNo">Owner Number</label>
+                        <input type="tel" id="ownerContactNo" name="ownerContactNo" required>
+                    </div>
+                </fieldset>
+
+                <div class="map-section">
+                    <h3>Find Us</h3>
+                    <p>Bata Christian Corner, Carlos Hilado Highway, Bacolod, Negros Occidental</p>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d955.2593666959538!2d122.9671703982762!3d10.703469038362156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aed18f4f7f4223%3A0xa14bd87db3820dcd!2sPaws%20N'%20Claws%20Veterinary%20Clinic!5e0!3m2!1sen!2sph!4v1773578427742!5m2!1sen!2sph" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <p class="disclaimer">*Please ensure all details are complete to avoid registration delays.</p>
+            </div>
+            <button type="submit" class="submit-btn">Register Patient</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Paws & Claws. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
